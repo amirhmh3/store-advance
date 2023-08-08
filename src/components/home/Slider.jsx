@@ -12,7 +12,7 @@ const Slider = () => {
   return (
     <div className="container mx-auto">
       <Swiper
-    className="mySwiper h-96 rounded-4xl"
+    className="mySwiper h-152 rounded-4xl"
     modules={[Pagination, Scrollbar, A11y,Autoplay]}
     spaceBetween={0}
     slidesPerView={1}
@@ -24,8 +24,6 @@ const Slider = () => {
       },
     }}
     scrollbar={{ draggable: true }}
-    // onSwiper={(swiper) => console.log(swiper)}
-    // onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide><img className="w-full h-full" src={img1} alt="" /></SwiperSlide>
       <SwiperSlide><img className="w-full h-full" src={img2} alt="" /></SwiperSlide>
