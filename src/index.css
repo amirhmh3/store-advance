@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    
+    .showf-sm{
+        @apply !flex sm:!flex md:!hidden lg:!hidden xl:!hidden 2xl:!hidden
+    }
+
+    .showf-md{
+        @apply !hidden sm:!flex md:!flex lg:!hidden xl:!hidden 2xl:!hidden
+    }
+
+    .showf-lg{
+        @apply !hidden sm:!hidden md:!hidden lg:!flex xl:!flex 2xl:!flex
+    }
+
+    .showf-md-sm{
+        @apply !flex sm:!flex md:!flex lg:!hidden xl:!hidden 2xl:!hidden
+    }
+
+    .showf-lg-md{
+        @apply !hidden sm:!flex md:!flex lg:!flex xl:!flex 2xl:!flex
+    }
+
+    
+    .showb-sm{
+        @apply !block sm:!block md:!hidden lg:!hidden xl:!hidden 2xl:!hidden
+    }
+
+    .showb-md{
+        @apply !hidden sm:!block md:!block lg:!hidden xl:!hidden 2xl:!hidden
+    }
+
+    .showb-lg{
+        @apply !hidden sm:!hidden md:!hidden lg:!block xl:!block 2xl:!block
+    }
+
+    .showb-md-sm{
+        @apply !block sm:!block md:!block lg:!hidden xl:!hidden 2xl:!hidden
+    }
+
+    .showb-lg-md{
+        @apply !hidden sm:!block md:!block lg:!block xl:!block 2xl:!block
+    }
+}
