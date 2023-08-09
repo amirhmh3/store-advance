@@ -12,7 +12,7 @@ const SliderCategory = () => {
       <Swiper
         className="mySwiper h-28 "
         modules={[Scrollbar, Autoplay]}
-        spaceBetween={0}
+        spaceBetween={20}
         breakpoints={{
           576: {
             // width: 576,
