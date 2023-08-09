@@ -4,7 +4,7 @@ const Middle = () => {
   return (
     <>
       <div className="container mx-auto grid  grid-cols-3 my-5">
-        <div className="flex justify-center 2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 col-span-3">
+        <div className="flex justify-center 2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 col-span-3 lg:mb-0 md:mb-0 mb-5">
           <img src={logo} alt="" />
         </div>
         <div className="flex 2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-2 sm:col-span-2 col-span-3 justify-center items-center mx-5">

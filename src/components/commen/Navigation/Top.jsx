@@ -1,11 +1,18 @@
 import {useState} from "react"
 import { BiLogoInstagram, BiLogoFacebook ,BiLogoTwitter,BiLogoLinkedin,BiSolidDownArrow,BiUser , BiHeart , BiCart,BiGridAlt} from "react-icons/bi";
 import { BsList} from "react-icons/bs";
+import SidbarCategory from "./SidbarCategory";
 const Top = () => {
     const [Currency,setCurrency]=useState(false);
     const [Language,setLanguage]=useState(false);
+    const [openC,setOpenC]=useState(false);
     const open="absolute top-8 bg-white z-50 rounded-3xl p-3 border-2 w-full transition-all duration-300";
     const close="absolute top-8 bg-white z-50 rounded-3xl p-3 border-2 w-full transition-all duration-300  hidden";
+
+    const handelOpenCategory=()=>{
+      setOpenC(!openC);
+    }
+
   return (
     <>
       <div className="container mx-auto grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 grid-cols-2">
@@ -23,7 +30,15 @@ const Top = () => {
             <BiLogoLinkedin />
           </i>
         </div>
-        <div className="flex 2xl:justify-center xl:justify-center lg:justify-center md:justify-center
+
+        {/* start sidbar */}
+        <div className={`${openC?"w-screen":"w-0"} showf-md-sm left-0 h-screen fixed bg-black/50 z-50`}> 
+        <div className={`${openC?"w-72 duration-500":"w-0 duration-500"}`}>
+          <SidbarCategory handelOpenCategory={handelOpenCategory}/>
+        </div>
+        </div>
+        {/* end sidbar */}
+        <div onClick={()=>setOpenC(!openC)} className="flex 2xl:justify-center xl:justify-center lg:justify-center md:justify-center
         sm:justify-center justify-start items-center uppercase text-sm mx-5">
           <BiGridAlt className="text-3xl mr-5 showf-md-sm"/>
         <div className="showf-lg-md">
@@ -32,7 +47,7 @@ const Top = () => {
         </div>
         </div>
 
-        <div className="justify-end items-center showf-md-sm my-2">
+        <div className="justify-end items-center showf-md-sm my-2 mr-5">
             <BiUser className="text-3xl mx-1 text-gray-700"/>
             <BiHeart className="text-3xl mx-1 text-gray-700"/>
             <BiCart className="text-3xl mx-1 text-gray-700"/>

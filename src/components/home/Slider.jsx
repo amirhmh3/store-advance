@@ -12,7 +12,7 @@ const Slider = () => {
   return (
     <div className="container mx-auto my-5">
       <Swiper
-    className="mySwiper 2xl:h-152 xl:h-152 lg:h-152 rounded-4xl"
+    className="mySwiper 2xl:h-152 xl:h-152 lg:h-152 rounded-4xl mx-5"
     modules={[Pagination, Scrollbar, A11y,Autoplay]}
     spaceBetween={0}
     slidesPerView={1}
