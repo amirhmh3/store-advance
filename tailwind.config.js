@@ -9,7 +9,8 @@ export default {
       height: {
         'none':'0px',
         '152':'38rem',
-        '75':'300px'
+        '75':'300px',
+        '104':'419px',
       },
       borderRadius: {
         '4xl': '4.5rem',
