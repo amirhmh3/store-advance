@@ -8,7 +8,8 @@ export default {
     extend: {
       height: {
         'none':'0px',
-        '152':'38rem'
+        '152':'38rem',
+        '75':'300px'
       },
       borderRadius: {
         '4xl': '4.5rem',

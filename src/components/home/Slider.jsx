@@ -19,7 +19,7 @@ const Slider = () => {
     autoplay={{delay:5000}}
     pagination={{ clickable: true ,
       renderBullet: function (index, className) {
-        console.log(className);
+        
         return '<span class="' + className + ' bg-black opacity-100 w-5 h-5 rounded-lg ">' +'</span>';
       },
     }}

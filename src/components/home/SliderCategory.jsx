@@ -30,7 +30,7 @@ const SliderCategory = () => {
         autoplay={{ delay: 3000 }}
         scrollbar={{ draggable: true }}
       >
-        {console.log(category)}
+        
         {!!category ? (
           category.map((c, index) => (
             <SwiperSlide key={index}>
