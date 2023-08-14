@@ -2,7 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Scrollbar } from "swiper/modules";
 import { BiSolidStar } from "react-icons/bi";
 import img from "./../../assets/image/img1.jpg";
-const SliderProductVerticalCategory = ({groupProduct}) => {
+import spinner from "./../../assets/gif/spinner.gif";
+const SliderProductVerticalCategory = ({groupProduct,loding}) => {
     return ( 
         <Swiper
             className="mySwiper h-max mt-5"
@@ -13,7 +14,7 @@ const SliderProductVerticalCategory = ({groupProduct}) => {
             scrollbar={{ draggable: true }}
           >
             
-            {!!groupProduct ? (
+            {!!loding?<img src={spinner}></img>:!!groupProduct ? (
               groupProduct.map((c, index) => (
                 <SwiperSlide key={index}>
                   <Swiper

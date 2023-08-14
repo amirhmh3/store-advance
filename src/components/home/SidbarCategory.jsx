@@ -1,11 +1,12 @@
 import { BiPlusMedical } from "react-icons/bi";
-const SidbarCategory = ({ category }) => {
+import spinner from "./../../assets/gif/spinner.gif";
+const SidbarCategory = ({ category ,loding}) => {
   return (
     <>
     <div className="w-full h-full">
       <h1 className="uppercase font-bold text-gray-700">Category</h1>
       <div className="my-3 mx-2">
-        {!!category &&
+        {!!loding?<img src={spinner}></img>:!!category &&
           category.map((c, index) => (
             <div key={index} className="flex items-center">
               <h1 className="capitalize w-full text-gray-700 my-1">{c.name}</h1>

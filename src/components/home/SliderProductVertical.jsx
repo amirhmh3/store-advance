@@ -3,7 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Scrollbar } from "swiper/modules";
 import groupDataUtil  from "../../utility/groupData";
 import img from "./../../assets/image/img1.jpg";
-const SliderProductVertical = ({ datas }) => {
+import spinner from "./../../assets/gif/spinner.gif";
+const SliderProductVertical = ({ datas,loding }) => {
   const [data, setData] = useState([]);
   useEffect(() => {
     setData(groupDataUtil(datas,4));
@@ -19,7 +20,7 @@ const SliderProductVertical = ({ datas }) => {
           autoplay={{ delay: 3000 }}
           scrollbar={{ draggable: true }}
         >
-          {!!data ? (
+          {!!loding?<img src={spinner}></img>:!!data ? (
             data.map((d, index) => (
               <SwiperSlide key={index} className="h-max">
                 <Swiper
