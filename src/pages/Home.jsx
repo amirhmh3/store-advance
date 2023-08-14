@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import Navigation from "../components/commen/Navigation";
+// import Navigation from "../components/commen/Navigation";
+import MainLayout from "./../layouts/MainLayout";
 import { getCategory, getAllProducts } from "./../service/productService";
 import { CategotyContext } from "./../context/CategotyContext";
 import {
@@ -55,12 +56,13 @@ const Home = () => {
   return (
     <>
       <CategotyContext.Provider value={{ category, products }}>
-        <Navigation category={category} />
+      <MainLayout>
+        {/* <Navigation category={category} /> */}
         <Slider />
         <SliderCategory category={category} />
-      </CategotyContext.Provider>
+      
 
-      <div className="container mx-auto mt-5 grid grid-cols-4">
+      <div className="container relative mx-auto mt-5 grid grid-cols-4">
         {/* start sidbar */}
         <div className="showb-lg">
           <div className="w-full h-max border-1 rounded-2.5 p-5 lg:col-span-1 sm:col-span-2 ">
@@ -127,6 +129,8 @@ const Home = () => {
 
         </div>
       </div>
+      </MainLayout>
+      </CategotyContext.Provider>
     </>
   );
 };
