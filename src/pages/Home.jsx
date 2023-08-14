@@ -55,8 +55,9 @@ const Home = () => {
 
   return (
     <>
+    <MainLayout>
       <CategotyContext.Provider value={{ category, products }}>
-      <MainLayout>
+      
         {/* <Navigation category={category} /> */}
         <Slider />
         <SliderCategory category={category} />
@@ -129,8 +130,9 @@ const Home = () => {
 
         </div>
       </div>
-      </MainLayout>
+      
       </CategotyContext.Provider>
+      </MainLayout>
     </>
   );
 };

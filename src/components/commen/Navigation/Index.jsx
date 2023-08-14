@@ -2,9 +2,9 @@ import Bottom from "./Bottom";
 import Middle from "./Middle";
 import Top from "./Top";
 
-const Index = () => {
+const Index = ({category,products}) => {
     return ( <>
-    <Top/>
+    <Top category={category} products={products}/>
     <Middle/>
     <Bottom/>
     </> );

@@ -1,11 +1,13 @@
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
+import  Main  from "./routes/Main";
 
 
 function App() {
 
   return (
     <>
-    <Home/>
+    {/* <Home/> */}
+    <Main/>
     </>
   )
 }

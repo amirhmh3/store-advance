@@ -1,9 +1,10 @@
 import Footer from "./../components/commen/Footer";
 import Navigation from "./../components/commen/Navigation";
-import { getCategory } from "./../service/productService";
+import { getCategory,getAllProducts } from "./../service/productService";
 import { useState, useEffect } from "react";
 const MainLayout = ({children}) => {
     const [category, setCategory] = useState([]);
+    const [products, setProduct] = useState([]);
 
     const getCategoryResponse = async () => {
         try {
@@ -14,12 +15,23 @@ const MainLayout = ({children}) => {
         }
       };
 
+    const getProductResponse = async () => {
+        try {
+          const data = await getAllProducts();
+          setProduct(data.data.data);
+        } catch (error) {
+          console.log(error.message);
+        }
+      };
+
       useEffect(() => {
         getCategoryResponse();
+        getProductResponse();
+        // console.log(product);
       }, []);
 
     return ( <>
-    <Navigation category={category}/>
+    <Navigation products={products} category={category}/>
     {children}
     <Footer category={category}/>
     </> );

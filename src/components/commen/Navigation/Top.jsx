@@ -2,7 +2,7 @@ import {useState} from "react"
 import { BiLogoInstagram, BiLogoFacebook ,BiLogoTwitter,BiLogoLinkedin,BiSolidDownArrow,BiUser , BiHeart , BiCart,BiGridAlt} from "react-icons/bi";
 import { BsList} from "react-icons/bs";
 import SidbarCategory from "./SidbarCategory";
-const Top = () => {
+const Top = ({category,products}) => {
     const [Currency,setCurrency]=useState(false);
     const [Language,setLanguage]=useState(false);
     const [openC,setOpenC]=useState(false);
@@ -34,7 +34,8 @@ const Top = () => {
         {/* start sidbar */}
         <div className={`${openC?"w-screen":"w-0"} showf-md-sm left-0 h-screen fixed bg-black/50 z-50`}> 
         <div className={`${openC?"w-72 duration-500":"w-0 duration-500"}`}>
-          <SidbarCategory handelOpenCategory={handelOpenCategory}/>
+        
+          <SidbarCategory handelOpenCategory={handelOpenCategory} category={category} products={products}/>
         </div>
         </div>
         {/* end sidbar */}
