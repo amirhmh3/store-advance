@@ -1,7 +1,7 @@
 import { BiMap,BiSolidPhone,BiLogoGmail } from "react-icons/bi";
 const Footer = ({category}) => {
     return ( <>
-    <div className=" w-full h-max bg-[#222222]">
+    <div className=" w-full h-full bg-[#222222] box-border">
         <div className="container mx-auto">
             <div className="py-9">
             <h1 className="font-bold text-pink-650">Brands Directory</h1>

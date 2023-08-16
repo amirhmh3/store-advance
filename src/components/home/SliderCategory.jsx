@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Scrollbar } from "swiper/modules";
 import { BiSolidChevronsRight } from "react-icons/bi";
-import { CategotyContext } from "./../../context/CategotyContext";
+import { CategotyContext } from "../../context/CategotyContext";
 import img from "./../../assets/image/img1.jpg";
 
 const SliderCategory = () => {
@@ -30,7 +30,6 @@ const SliderCategory = () => {
         autoplay={{ delay: 3000 }}
         scrollbar={{ draggable: true }}
       >
-        
         {!!category ? (
           category.map((c, index) => (
             <SwiperSlide key={index}>

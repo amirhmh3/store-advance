@@ -5,12 +5,12 @@ import { getCategory, getAllProducts } from "./../service/productService";
 import { CategotyContext } from "./../context/CategotyContext";
 import {
   SliderProductVertical,
-  SidbarCategory,
   SliderCategory,
   Slider,
   SliderDay,
   ProductTabLayout
 } from "../components/home";
+import {SidbarCategory} from "./../components/commen";
 import SliderProductVerticalCategory from "./../components/commen/SliderProductVerticalCategory";
 import groupData from "../utility/groupData";
 const Home = () => {
