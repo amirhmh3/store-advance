@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import ProtectRout from "./../middleware/ProtectRout";
-import Home from "./../pages/Home";
-import Login from "./../pages/Login";
-import Dashboard from "../pages/Dashboard";
-import ProductSingle from "../pages/ProductSingle";
+import Home from "pages/Home";
+import Login from "pages/Login";
+import Dashboard from "pages/Dashboard";
+import ProductSingle from "pages/ProductSingle";
 const Main = () => {
   return (
       <Routes>

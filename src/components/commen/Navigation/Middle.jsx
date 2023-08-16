@@ -1,4 +1,4 @@
-import logo from "../../../assets/logo.png";
+import logo from "assets/logo.png";
 import { BiUser , BiHeart , BiCart,BiSearch} from "react-icons/bi";
 const Middle = () => {
   return (

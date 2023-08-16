@@ -50,19 +50,19 @@ const TimerBoxOff = ({ startDay, startHour, startMinute, startSecond }) => {
   return (
     <div>
       <div className="timer flex">
-        <span className="text-lg mr-3 bg-gray-200  py-2 px-4 text-center font-bold text-gray-500" id="days">
+        <span className="text-lg mr-3 bg-gray-200  py-2 sm:px-4 px-2 text-center font-bold text-gray-500" id="days">
           {days.toString().padStart(2, "0")}
           <p className='text-sm font-normal'>Days</p>
         </span>
-        <span className="text-lg mr-3 bg-gray-200  py-2 px-4 text-center font-bold text-gray-500" id="hours">
+        <span className="text-lg mr-3 bg-gray-200  py-2 sm:px-4 px-2 text-center font-bold text-gray-500" id="hours">
           {hours.toString().padStart(2, "0")}
           <p className='text-sm font-normal'>Hours</p>
         </span>
-        <span className="text-lg mr-3 bg-gray-200  py-2 px-5 text-center font-bold text-gray-500" id="minutes">
+        <span className="text-lg mr-3 bg-gray-200  py-2 sm:px-4 px-2 text-center font-bold text-gray-500" id="minutes">
           {minutes.toString().padStart(2, "0")}
           <p className='text-sm font-normal'>Min</p>
         </span>
-        <span className="text-lg mr-3 bg-gray-200  py-2 px-6 text-center font-bold text-gray-500" id="seconds">
+        <span className="text-lg mr-3 bg-gray-200  py-2 sm:px-4 px-2 text-center font-bold text-gray-500" id="seconds">
           {seconds.toString().padStart(2, "0")}
           <p className='text-sm font-normal'>Sec</p>
         </span>

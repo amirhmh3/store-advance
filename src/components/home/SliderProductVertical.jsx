@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Scrollbar } from "swiper/modules";
-import groupDataUtil  from "../../utility/groupData";
-import img from "./../../assets/image/img1.jpg";
-import spinner from "./../../assets/gif/spinner.gif";
+import groupDataUtil  from "utility/groupData";
+import img from "assets/image/img1.jpg";
+import spinner from "assets/gif/spinner.gif";
 const SliderProductVertical = ({ datas,loding }) => {
   const [data, setData] = useState([]);
   useEffect(() => {

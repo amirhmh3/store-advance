@@ -31,9 +31,14 @@ const MainLayout = ({children}) => {
       }, []);
 
     return ( <>
+    <div className="box-border">
     <Navigation products={products} category={category}/>
-    {children}
+    
+     {children}
+    
+    
     <Footer category={category}/>
+    </div>
     </> );
 }
  

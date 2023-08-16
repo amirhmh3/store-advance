@@ -2,8 +2,8 @@ import { useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Scrollbar } from "swiper/modules";
 import { BiSolidChevronsRight } from "react-icons/bi";
-import { CategotyContext } from "../../context/CategotyContext";
-import img from "./../../assets/image/img1.jpg";
+import { CategotyContext } from "context/CategotyContext";
+import img from "assets/image/img1.jpg";
 
 const SliderCategory = () => {
   const { category } = useContext(CategotyContext);

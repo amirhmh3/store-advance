@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Scrollbar } from "swiper/modules";
-import img1 from "./../../assets/image/img1.jpg";
-import { useEffect } from "react";
+import img1 from "assets/image/img1.jpg";
 const SliderImage = ({ datas }) => {
   const [currentImg, setCurrentImg] = useState(!!datas.length?datas[0]:img1);
 

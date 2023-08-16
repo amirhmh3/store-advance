@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Scrollbar } from "swiper/modules";
 import { BiSolidStar } from "react-icons/bi";
-import img from "./../../assets/image/img1.jpg";
-import spinner from "./../../assets/gif/spinner.gif";
+import img from "assets/image/img1.jpg";
+import spinner from "assets/gif/spinner.gif";
 const SliderProductVerticalCategory = ({groupProduct,loding}) => {
     return ( 
         <Swiper

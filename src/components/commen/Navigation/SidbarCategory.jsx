@@ -1,7 +1,5 @@
 import { BiX, BiPlusMedical, BiSolidStar } from "react-icons/bi";
-// import { CategotyContext } from "./../../../context/CategotyContext";
-// import { useContext } from "react";
-import groupData from "../../../utility/groupData";
+import groupData from "utility/groupData";
 import SliderProductVerticalCategory from "../SliderProductVerticalCategory";
 const SidbarCategory = ({handelOpenCategory,category,products}) => {
   const groupProduct=groupData(products,4)

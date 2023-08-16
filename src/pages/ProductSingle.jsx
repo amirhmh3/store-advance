@@ -65,7 +65,7 @@ const ProductSingle = () => {
             <h3 className="flex justify-end">Home {">>"} <span className="text-blue-500">Products</span></h3>
             </div>
         </div>
-    <div className="container relative mx-auto my-12 grid grid-cols-4">
+    <div className="w-screen container relative mx-auto my-12 grid grid-cols-4">
         <div className="lg:col-span-3 col-span-4">
             <div className="grid grid-cols-5">
                 <div className="md:col-span-2 sm:col-span-5 col-span-5">
@@ -79,7 +79,8 @@ const ProductSingle = () => {
 
         </div>
         {/* start sidbar */}
-        <div className="showf-lg flex-col">
+        <div className="showf-lg flex-col relative">
+            <div className="static">
           <div className="w-full h-max border-1 rounded-2.5 p-5 ">
             <SidbarCategory category={category} loding={lodingCategory}/>
           </div>
@@ -87,7 +88,7 @@ const ProductSingle = () => {
             best sellers
           </h1>
           <SliderProductVertical datas={bastProduct} loding={lodingProduct} />
-
+          </div>
         </div>
         {/* end sidbar */}
         </div>
@@ -95,6 +96,7 @@ const ProductSingle = () => {
         <div className="container py-12 mx-auto text-center">
             <ProductsRlated products={bastProduct.slice(0,4)} loding={lodingProduct}/>
         </div>
+        
     
     </MainLayout> );
 }

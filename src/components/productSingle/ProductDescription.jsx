@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BiSolidStar} from "react-icons/bi";
-import img1 from "./../../assets/image/img1.jpg";
+import img1 from "assets/image/img1.jpg";
 const ProductDescription = () => {
     const [tabId,setTabId]=useState(1);
     const handelTab=(tabId)=>{

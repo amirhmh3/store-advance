@@ -12,7 +12,7 @@ const Footer = ({category}) => {
             </div>
         </div>
         <hr className="border-[#3c3c3c]"/>
-        <div className="container mx-auto">
+        <div className="container mx-auto w-full showf-lg">
             <div className="grid grid-cols-5">
             <div className="py-9">
             <h1 before="" className="relative pb-2 font-bold text-white before:content-[attr(before)] before:w-10 before:absolute before:border-b-1 before:border-pink-650 before:left-0 before:bottom-0">Popular Categories</h1>

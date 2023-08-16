@@ -1,5 +1,5 @@
 import { BiPlusMedical } from "react-icons/bi";
-import spinner from "./../../assets/gif/spinner.gif";
+import spinner from "assets/gif/spinner.gif";
 const SidbarCategory = ({ category ,loding}) => {
   return (
     <>

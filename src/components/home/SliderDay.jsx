@@ -2,9 +2,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { TimerBoxOff } from "../home";
 import React from "react";
-import img1 from "./../../assets/image/img1.jpg";
-import img2 from "./../../assets/image/img2.jpg";
-import img3 from "./../../assets/image/img3.jpg";
+import img1 from "assets/image/img1.jpg";
+import img2 from "assets/image/img2.jpg";
+import img3 from "assets/image/img3.jpg";
 import "./Slider.css";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -23,12 +23,12 @@ const SliderDay = () => {
       >
 
 <SwiperSlide>
-          <div className="p-7 grid lg:grid-cols-5 md:grid-cols-4 bg-white">
+          <div className="sm:p-7 p-2 grid lg:grid-cols-5 md:grid-cols-4 bg-white">
             <div className="md:w-104 w-full md:!h-104 lg:!h-104 !h-104 lg:col-span-3 md:col-span-2">
             <img className="w-full h-full lg:col-span-3 md:col-span-2" src={img1} alt="" />
             </div>
             
-            <div className="pl-7 w-full lg:col-span-2 md:col-span-2">
+            <div className="sm:pl-7 pl-0 w-full lg:col-span-2 md:col-span-2">
               <div className="flex md:m-0 mt-5">
                 <BiSolidStar className="text-lg text-yellow-400" />
                 <BiSolidStar className="text-lg text-yellow-400" />
@@ -74,12 +74,12 @@ const SliderDay = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="p-7 grid lg:grid-cols-5 md:grid-cols-4 bg-white">
+          <div className="sm:p-7 p-2 grid lg:grid-cols-5 md:grid-cols-4 bg-white">
             <div className="md:w-104 w-full md:!h-104 lg:!h-104 !h-104 lg:col-span-3 md:col-span-2">
             <img className="w-full h-full lg:col-span-3 md:col-span-2" src={img2} alt="" />
             </div>
             
-            <div className="pl-7 w-full lg:col-span-2 md:col-span-2">
+            <div className="sm:pl-7 pl-0 w-full lg:col-span-2 md:col-span-2">
               <div className="flex md:m-0 mt-5">
                 <BiSolidStar className="text-lg text-yellow-400" />
                 <BiSolidStar className="text-lg text-yellow-400" />
@@ -125,12 +125,12 @@ const SliderDay = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="p-7 grid lg:grid-cols-5 md:grid-cols-4 bg-white">
+          <div className="sm:p-7 p-2 grid lg:grid-cols-5 md:grid-cols-4 bg-white">
             <div className="md:w-104 w-full md:!h-104 lg:!h-104 !h-104 lg:col-span-3 md:col-span-2">
             <img className="w-full h-full lg:col-span-3 md:col-span-2" src={img3} alt="" />
             </div>
             
-            <div className="pl-7 w-full lg:col-span-2 md:col-span-2">
+            <div className="sm:pl-7 pl-0 w-full lg:col-span-2 md:col-span-2">
               <div className="flex md:m-0 mt-5">
                 <BiSolidStar className="text-lg text-yellow-400" />
                 <BiSolidStar className="text-lg text-yellow-400" />

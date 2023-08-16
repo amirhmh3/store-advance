@@ -1,8 +1,8 @@
 import { useState,useEffect } from "react";
 import { BiSolidStar,BiHeart,BiShow,BiCartAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import img1 from "./../../assets/image/img1.jpg";
-import spinner from "./../../assets/gif/spinner.gif";
+import img1 from "assets/image/img1.jpg";
+import spinner from "assets/gif/spinner.gif";
 const ProductTabLayout = ({products,loding}) => {
     const [category,setCategory]=useState(0)
     const [product,setProduct]=useState(products.slice(0,8));

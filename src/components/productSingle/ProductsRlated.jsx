@@ -1,5 +1,5 @@
 import { BiSolidStar } from "react-icons/bi";
-import spinner from "./../../assets/gif/spinner.gif";
+import spinner from "assets/gif/spinner.gif";
 const ProductsRlated = ({products,loding}) => {
   return (
     <>
@@ -17,7 +17,7 @@ const ProductsRlated = ({products,loding}) => {
             alt=""
           />
           <div className="text-start mt-3">
-            <h1 className="text-lg text-gray-500 mb-2 line-clamp-1">{p.title}</h1>
+            <h1 className=" w-72 text-lg text-gray-500 mb-2 line-clamp-1">{p.title}</h1>
             <div className="flex items-center ml-1">
               <BiSolidStar className="text-lg text-pink-650" />
               <BiSolidStar className="text-lg text-pink-650" />

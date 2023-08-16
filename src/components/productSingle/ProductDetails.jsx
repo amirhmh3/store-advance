@@ -1,5 +1,5 @@
 import { BiSolidStar, BiLogoInstagram, BiLogoFacebook ,BiLogoTwitter,BiLogoLinkedin,BiHeart,BiShow} from "react-icons/bi";
-import spinner from "./../../assets/gif/spinner.gif"
+import spinner from "assets/gif/spinner.gif"
 import TimerBoxOff from "./TimerBoxOff";
 const ProductDetails = ({product,loding}) => {
     return ( <div className="px-5">
