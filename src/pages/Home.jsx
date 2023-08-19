@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 // import Navigation from "../components/commen/Navigation";
-import MainLayout from "./../layouts/MainLayout";
-import { getCategory, getAllProducts } from "./../service/productService";
-import { CategotyContext } from "./../context/CategotyContext";
+import MainLayout from "layouts/MainLayout";
+import { getCategory, getAllProducts } from "service/productService";
+import { CategotyContext } from "context/CategotyContext";
 import {
   SliderProductVertical,
   SliderCategory,
@@ -12,7 +12,7 @@ import {
 } from "../components/home";
 import {SidbarCategory} from "./../components/commen";
 import SliderProductVerticalCategory from "./../components/commen/SliderProductVerticalCategory";
-import groupData from "../utility/groupData";
+import groupData from "utility/groupData";
 const Home = () => {
   const [category, setCategory] = useState([]);
   const [products, setProducts] = useState([]);

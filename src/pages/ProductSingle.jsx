@@ -1,9 +1,9 @@
 import { useState,useEffect } from "react";
 import { useParams } from "react-router-dom";
-import MainLayout from "./../layouts/MainLayout";
+import MainLayout from "layouts/MainLayout";
 import {SidbarCategory} from "./../components/commen";
 import {SliderProductVertical,SliderImage,ProductDetails,ProductDescription,ProductsRlated} from "./../components/productSingle";
-import { getBestProducts,getCategory,getProductById } from "./../service/productService";
+import { getBestProducts,getCategory,getProductById } from "service/productService";
 const ProductSingle = () => {
     const { productId } = useParams();
     const [bastProduct,setBastProduct]=useState([]);

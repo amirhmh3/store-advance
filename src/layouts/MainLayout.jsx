@@ -1,6 +1,6 @@
 import Footer from "./../components/commen/Footer";
 import Navigation from "./../components/commen/Navigation";
-import { getCategory,getAllProducts } from "./../service/productService";
+import { getCategory,getAllProducts } from "service/productService";
 import { useState, useEffect } from "react";
 const MainLayout = ({children}) => {
     const [category, setCategory] = useState([]);
