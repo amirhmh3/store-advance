@@ -12,6 +12,9 @@ export default {
         '75':'300px',
         '104':'419px',
       },
+      width: {
+        '104':'419px',
+      },
       borderRadius: {
         '4xl': '4.5rem',
         '2.5':'2.5rem'

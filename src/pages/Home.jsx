@@ -58,7 +58,7 @@ const Home = () => {
     <MainLayout>
       <CategotyContext.Provider value={{ category, products }}>
       
-        {/* <Navigation category={category} /> */}
+        
         <Slider />
         <SliderCategory category={category} />
       

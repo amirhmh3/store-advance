@@ -13,7 +13,9 @@ export default defineConfig({
       context: "/src/context",
       service: "/src/service",
       pages: "/src/pages",
-      layouts: "/src/layouts"
+      layouts: "/src/layouts",
+      validation: "/src/validation",
+      middleware: "/src/middleware",
     },
   },
 })

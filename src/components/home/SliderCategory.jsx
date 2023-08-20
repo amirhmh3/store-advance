@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Scrollbar } from "swiper/modules";
 import { BiSolidChevronsRight } from "react-icons/bi";
@@ -33,6 +34,7 @@ const SliderCategory = () => {
         {!!category ? (
           category.map((c, index) => (
             <SwiperSlide key={index}>
+              <Link to="/category">
               <div className="w-full h-full  border-1 rounded-3xl flex group">
                 <div className="w-28 h-20 m-auto ml-5 p-3 rounded-3xl overflow-hidden bg-gray-300">
                   <img
@@ -52,6 +54,7 @@ const SliderCategory = () => {
                   <p className="text-sm">({c.products.length})</p>
                 </div>
               </div>
+              </Link>
             </SwiperSlide>
           ))
         ) : (
